@@ -1,3 +1,5 @@
 file { '/tmp/hello4.txt':
-  source => '/tmp/hello3.txt',
+  ensure => present,
+  owner => roman,
+  group => roman,
 }
