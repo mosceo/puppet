@@ -1,4 +1,4 @@
 exec { 'install-cat-picture-generator':
   cwd     => '/tmp',
-  command => '/usr/bin/touch file-touched.log',
+  command => 'touch file-touched-2.log',
 }
