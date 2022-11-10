@@ -1,15 +1,15 @@
-file { '/tmp/hello4.txt':
+file { '/tmp/hello':
+  ensure => directory
+}
+
+file { '/tmp/hello/some.txt':
   ensure => present,
   owner => roman,
   group => roman,
   mode => '0600'
 }
 
-file { '/tmp/hello':
-  ensure => directory
+file { '/tmp/hello/pup':
+  source => '/home/roman',
+  recurse => true,
 }
-
-# file { '/tmp/pup':
-#   source => '/examples/files/config_dir',
-#   recurse => true,
-# }
