@@ -13,6 +13,7 @@ file { '/tmp/config':
 file { '/tmp/config/nginx.conf':
   ensure => present,
   notify => Service['nginx'],
+  content => 'apple pie',
 }
 
 service { 'nginx':
