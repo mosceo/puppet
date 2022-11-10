@@ -6,7 +6,7 @@
 # }
 
 file { '/tmp/aliases':
-  content => 'root: john@bitfieldconsulting.ru2',
+  content => 'root: john@bitfieldconsulting.ru3',
   notify  => Exec['aliases-changed'],
 }
 
