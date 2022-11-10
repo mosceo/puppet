@@ -17,7 +17,7 @@ file { '/tmp/config/nginx.conf':
 }
 
 service { 'nginx':
-  ensure  => stopped,
+  ensure  => running,
   enable  => true,
   restart => 'echo "restarting NGINX" >> /tmp/debug.log && systemctl restart nginx',
 }
