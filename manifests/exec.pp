@@ -1,4 +1,4 @@
 exec { 'install-cat-picture-generator':
   cwd     => '/tmp',
-  command => 'echo "exec" >> file.log',
+  command => '/usr/bin/echo "exec" >> file.log',
 }
