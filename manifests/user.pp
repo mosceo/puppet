@@ -10,3 +10,10 @@ user { 'dave':
   shell  => '/bin/bash',
   groups => ['devs'],
 }
+
+user { 'grupman':
+  ensure => present,
+  uid    => '4000',
+  home   => '/tmp',
+  shell  => '/usr/sbin/nologin',
+}
