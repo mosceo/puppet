@@ -6,6 +6,10 @@ file { '/tmp/hello4.txt':
 }
 
 directory { '/tmp/hello':
-  ensure => directory,
-  mode => '0750'
+  ensure => directory
 }
+
+# file { '/tmp/pup':
+#   source => '/examples/files/config_dir',
+#   recurse => true,
+# }
