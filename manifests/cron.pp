@@ -13,3 +13,11 @@ cron { 'cronexample2':
   hour        => '*',
   minute      => '*',
 }
+
+cron { 'cronexample3':
+  command     => 'ls',
+  user        => 'roman',
+  # environment => ['MAILTO=admin@example.com', 'PATH=/bin'],
+  hour        => '*',
+  minute      => '*',
+}
