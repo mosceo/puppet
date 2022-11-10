@@ -13,11 +13,12 @@ file { '/tmp/config':
 file { '/tmp/config/nginx.conf':
   ensure => present,
   notify => Service['nginx'],
-  content => "apple pie 4\n",
+  content => "apple pie 5\n",
 }
 
 service { 'nginx':
   ensure  => running,
   enable  => true,
   # restart => 'echo "restarting NGINX" >> /tmp/debug.log && systemctl restart nginx',
+  restart => 'systemctl restart nginx',
 }
