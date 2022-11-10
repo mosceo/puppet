@@ -1,4 +1,4 @@
-cron { 'cronexample':
+cron { 'cron example':
   ensure  => absent,
   command => 'echo "work..." >> /tmp/debug.log',
   user    => 'roman',
@@ -7,7 +7,7 @@ cron { 'cronexample':
   minute  => '*',
 }
 
-cron { 'cronexample2':
+cron { 'cron example 2':
   ensure  => absent,
   command => 'touch /tmp/debug-touched.log',
   user    => 'roman',
