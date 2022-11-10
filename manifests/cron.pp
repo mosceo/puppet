@@ -29,3 +29,11 @@ cron { 'cronexample4':
   hour        => '*',
   minute      => '*',
 }
+
+cron { 'cronexample5':
+  command     => '/etc/puppet/code/puppet/files/log.sh',
+  user        => 'roman',
+  # environment => ['MAILTO=admin@example.com', 'PATH=/bin'],
+  hour        => '*',
+  minute      => '*',
+}
