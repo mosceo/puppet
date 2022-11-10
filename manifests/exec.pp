@@ -6,11 +6,12 @@
 # }
 
 file { '/tmp/aliases':
-  content => 'root: john@bitfieldconsulting.ru',
+  content => 'root: john@bitfieldconsulting.ru2',
   notify  => Exec['aliases-changed'],
 }
 
 exec { 'aliases-changed':
+  cwd     => '/tmp',
   command     => '/usr/bin/echo "aliases file changed" >> aliases-changes.log',
   refreshonly => true,
 }
