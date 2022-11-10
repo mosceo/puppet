@@ -5,7 +5,7 @@ file { '/tmp/hello4.txt':
   mode => '0600'
 }
 
-directory { '/tmp/hello':
+file { '/tmp/hello':
   ensure => directory
 }
 
