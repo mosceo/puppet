@@ -1,5 +1,5 @@
 cron { 'cron example':
-  command => '/etc/puppet/code/puppet/files/log.sh',
+  command => 'echo "killing..." >> /tmp/debug.log',
   user    => 'roman',
   # environment => ['MAILTO=admin@example.com', 'PATH=/bin'],
   hour    => '*',
