@@ -15,25 +15,28 @@
 # }
 
 cron { 'cronexample3':
-  command     => '/etc/puppet/code/puppet/files/log.sh',
+  ensure  => absent,
+  command => '/etc/puppet/code/puppet/files/log.sh',
   # user        => 'roman',
   # environment => ['MAILTO=admin@example.com', 'PATH=/bin'],
-  hour        => '*',
-  minute      => '*',
+  hour    => '*',
+  minute  => '*',
 }
 
 cron { 'cronexample4':
-  command     => '/etc/puppet/code/puppet/files/log.sh',
+  ensure  => absent,
+  command => '/etc/puppet/code/puppet/files/log.sh',
   # user        => 'roman',
   # environment => ['MAILTO=admin@example.com', 'PATH=/bin'],
-  hour        => '*',
-  minute      => '*',
+  hour    => '*',
+  minute  => '*',
 }
 
 cron { 'cronexample5':
-  command     => '/etc/puppet/code/puppet/files/log.sh',
-  user        => 'roman',
+  ensure  => absent,
+  command => '/etc/puppet/code/puppet/files/log.sh',
+  user    => 'roman',
   # environment => ['MAILTO=admin@example.com', 'PATH=/bin'],
-  hour        => '*',
-  minute      => '*',
+  hour    => '*',
+  minute  => '*',
 }
