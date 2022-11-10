@@ -1,3 +1,3 @@
-file { '/tmp/hello2.txt':
+file { '/tmp/hello3.txt':
   content => "hello, world\n",
 }
