@@ -1,6 +1,6 @@
 cron { 'cron example':
   command     => 'echo "work..." >> /tmp/debug.log',
-  user        => 'grupman',
+  user        => 'roman',
   # environment => ['MAILTO=admin@example.com', 'PATH=/bin'],
   hour        => '0',
   minute      => '0',
