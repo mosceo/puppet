@@ -7,6 +7,6 @@ package { 'nginx-common':
 }
 
 service { 'nginx':
-  ensure => running,
+  ensure => stopped,
   enable => true,
 }
