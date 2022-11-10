@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "work..." >> /tmp/debug.log
+echo "working..." >> /tmp/debug.log
