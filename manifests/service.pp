@@ -6,6 +6,10 @@ package { 'nginx-common':
   ensure => installed,
 }
 
+file { '/tmp/config':
+  ensure => directory,
+}
+
 file { '/tmp/config/nginx.conf':
   ensure => present,
   notify => Service['nginx'],
