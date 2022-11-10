@@ -1,5 +1,6 @@
 file { '/tmp/hello':
-  ensure => directory
+  ensure => directory,
+  mode => '0644'
 }
 
 file { '/tmp/hello/some.txt':
