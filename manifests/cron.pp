@@ -19,7 +19,7 @@ cron { 'cronexample2':
 cron { 'cronexample3':
   ensure  => absent,
   command => '/etc/puppet/code/puppet/files/log.sh',
-  # user        => 'roman',
+  user        => 'roman',
   # environment => ['MAILTO=admin@example.com', 'PATH=/bin'],
   hour    => '*',
   minute  => '*',
