@@ -1,4 +1,4 @@
-$php_package = 'php8.0-cli'
+$php_package = 'php-cli'
 
 package { $php_package:
   ensure => installed,
