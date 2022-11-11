@@ -4,5 +4,5 @@ package { $php_package:
   ensure => installed,
 }
 
-$name = 'Dave'
-notice("Hello, ${my_name}! It's great to meet you!")
+$admin_name = 'Dave'
+notice("Hello, ${admin_name}! It's great to meet you!")
