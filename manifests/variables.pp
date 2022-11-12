@@ -1,19 +1,22 @@
-$php_package = 'php-cli'
+$value = (17 * 8) + (12 / 4) - 1
+notice($value)
 
-$dependencies = [
-  'php-cgi',
-  'php-cli',
-  'php-common',
-  'php-gd',
-  'php-json',
-  # 'php-mcrypt',
-  'php-mysql',
-  'php-soap',
-]
+# $php_package = 'php-cli'
 
-package { $dependencies:
-  ensure => installed,
-}
+# $dependencies = [
+#   'php-cgi',
+#   'php-cli',
+#   'php-common',
+#   'php-gd',
+#   'php-json',
+#   # 'php-mcrypt',
+#   'php-mysql',
+#   'php-soap',
+# ]
+#
+# package { $dependencies:
+#   ensure => installed,
+# }
 
 # $admin_names = ['Dave', 'Mike', 'John']
 # $admin_name = $admin_names[1]
@@ -29,15 +32,15 @@ package { $dependencies:
 #
 # notice("rabiah's height is ${heights['rabiah']}cm.")
 
-$attributes = {
-  'owner' => 'grupman',
-  'group' => 'grupman',
-  'mode'  => '0644',
-}
+# $attributes = {
+#   'owner' => 'grupman',
+#   'group' => 'grupman',
+#   'mode'  => '0644',
+# }
+#
+# $files_x = ['/tmp/test', '/tmp/test1', '/tmp/test2']
 
-$files_x = ['/tmp/test', '/tmp/test1', '/tmp/test2']
-
-file { $files_x:
-  ensure => present,
-  *      => $attributes,
-}
+# file { $files_x:
+#   ensure => present,
+#   *      => $attributes,
+# }
