@@ -6,7 +6,7 @@ $dependencies = [
   'php-common',
   'php-gd',
   'php-json',
-   # 'php-mcrypt',
+  # 'php-mcrypt',
   'php-mysql',
   'php-soap',
 ]
@@ -18,3 +18,13 @@ package { $dependencies:
 # $admin_names = ['Dave', 'Mike', 'John']
 # $admin_name = $admin_names[1]
 # notice("Hello, ${admin_name}! It's great to meet you!")
+
+$heights = {
+  'john'    => 193,
+  'rabiah'  => 120,
+  'abigail' => 181,
+  'melina'  => 164,
+  'sumiko'  => 172,
+}
+
+notice("rabiah's height is ${heights['rabiah']}cm.")
