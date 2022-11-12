@@ -1,2 +1,2 @@
 notice($facts['kernel'])
-notice($::kernel)
+notice($facts['distro']['release']['full'])
