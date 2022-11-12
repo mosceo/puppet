@@ -1,7 +1,7 @@
 $candidate = 'foo'
 notice($candidate =~ /fo+/)
 notice($candidate =~ /f/)
-notice($candidate =~ /^oo/)
+notice($candidate =~ /oo/)
 notice($candidate =~ /^oo/)
 
 # $php_package = 'php-cli'
