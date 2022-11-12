@@ -35,7 +35,9 @@ $attributes = {
   'mode'  => '0644',
 }
 
-file { '/tmp/test':
+$files_x = ['/tmp/test', '/tmp/test1', '/tmp/test2']
+
+file { $files_x:
   ensure => present,
   *      => $attributes,
 }
