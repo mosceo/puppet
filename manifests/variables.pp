@@ -5,7 +5,7 @@ notice($candidate =~ /oo/)
 notice($candidate =~ /^oo/)
 notice($candidate =~ /^fo+$/)
 
-$php_present = true
+$php_present = false
 if $php_present {
   package { 'php-cli':
     ensure => installed,
