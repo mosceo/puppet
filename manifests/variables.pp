@@ -1,14 +1,14 @@
 $php_package = 'php-cli'
 
 $dependencies = [
-  'php8.1-cgi',
-  'php8.1-cli',
-  'php8.1-common',
-  'php8.1-gd',
-  'php8.1-json',
-  'php8.1-mcrypt',
-  'php8.1-mysql',
-  'php8.1-soap',
+  'php-cgi',
+  'php-cli',
+  'php-common',
+  'php-gd',
+  'php-json',
+  'php-mcrypt',
+  'php-mysql',
+  'php-soap',
 ]
 
 package { $dependencies:
