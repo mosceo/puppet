@@ -1,9 +1,9 @@
 package { 'nginx':
-  ensure => installed,
+  ensure => absent,
 }
 
 package { 'nginx-common':
-  ensure => installed,
+  ensure => absent,
 }
 
 file { '/tmp/config':
@@ -17,8 +17,8 @@ file { '/tmp/config/nginx.conf':
 }
 
 service { 'nginx':
-  ensure  => running,
-  enable  => true,
+  ensure  => stopped,
+  enable  => false,
   # restart => 'systemctl restart nginx',
   # restart => 'echo "restarting NGINX" >> /tmp/debug.log && systemctl restart nginx',   DOESNT WORK
 }
