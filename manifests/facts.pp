@@ -1,2 +1,3 @@
-notice($facts['kernel'])
-notice($facts['distro']['release']['full'])
+notice($facts['os']['release']['major'])
+notice($facts['path'])
+notice($facts['networking']['fqdn'])
