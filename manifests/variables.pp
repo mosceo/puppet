@@ -1,5 +1,10 @@
 $value = (17 * 8) + (12 / 4) - 1
 notice($value)
+notice(11 > 10)
+
+notice('foo' in 'foobar')
+notice('foo' in ['foo', 'bar'])
+notice('foo' in { 'foo' => 'bar' })
 
 # $php_package = 'php-cli'
 
