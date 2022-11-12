@@ -7,11 +7,11 @@ notice($candidate =~ /^fo+$/)
 
 $php_present = false
 if $php_present {
-  package { 'php-cli':
+  package { 'php8.1-cli':
     ensure => installed,
   }
 } else {
-  package { 'php-cli':
+  package { 'php8.1-cli':
     ensure => absent,
   }
 }
