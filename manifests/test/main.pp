@@ -5,3 +5,7 @@
 
 notice(lookup('x_name'))
 notice("His name is %{lookup('x_name')}")
+
+file { lookup('x_dir', String)):
+  ensure => directory,
+}
