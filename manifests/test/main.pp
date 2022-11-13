@@ -10,3 +10,4 @@ if lookup('cobbler_config.manage_dhcp', Boolean) {
 }
 
 notice(lookup('x_backup'))
+notice(lookup('percent'))
