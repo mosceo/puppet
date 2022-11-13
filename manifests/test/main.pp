@@ -8,3 +8,5 @@ if $cobbler_config['manage_dhcp'] {
 if lookup('cobbler_config.manage_dhcp', Boolean) {
   notice('DHCP is managed v2')
 }
+
+notice(lookup('x_backup'))
