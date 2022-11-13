@@ -3,9 +3,10 @@
 #   notice("Interface ${interface} has IP ${attributes['ip']}")
 # }
 
-notice(lookup('x_name'))
-notice("His name is %{lookup('x_name')}")
 
-file { lookup('x_dir', String)):
+$dir_path = lookup('x_dir')
+notice($dir_path)
+
+file { $dir_path:
   ensure => directory,
 }
