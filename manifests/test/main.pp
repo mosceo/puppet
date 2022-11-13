@@ -1,2 +1,2 @@
-notice(lookup('name'))
+notice(lookup('name', Array, 'unique'))
 notice(lookup('age'))
