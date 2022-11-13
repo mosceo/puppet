@@ -1,2 +1,5 @@
-notice(lookup('name', Array, 'unique'))
-notice(lookup('age', Array, 'unique'))
+lookup('users', Array[String]).each | String $username | {
+  user { $username:
+    ensure => present,
+  }
+}
