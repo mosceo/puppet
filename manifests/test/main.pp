@@ -1,10 +1,6 @@
-$dir_path = lookup('x_dir')
-notice($dir_path)
-notice("Some text: $dir_path")
-notice("Some text: ${dir_path}")
-notice("Some text: ${lookup('x_dir')}")
-notice("Some text: ", lookup('x_dir'))
+notice("Syslog server:", lookup('syslog_server'))
 
-file { $dir_path:
-  ensure => directory,
+$cobbler_config = lookup('cobbler_config', Hash)
+if $cobbler_config['manage_dhcp'] {
+  notice('DHCP is managed')
 }
